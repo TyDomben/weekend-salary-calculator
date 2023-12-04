@@ -28,3 +28,8 @@ th {
 .deleteBtn:hover {
     opacity: 0.8;
 }
+
+footer .over-budget {
+ color: rgb(227, 17, 220);
+    
+}
