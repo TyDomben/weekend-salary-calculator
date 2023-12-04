@@ -1,105 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="Styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Styles.css" />
 
-  <title>Weekend-Salary-Calculator</title>
-</head>
-<body>
-  <header>
-    <h1>Salary Calculator</h1>
-  </header>
- 
-  <main>
-    <h2>Add Employee</h2>
+    <title>Weekend-Salary-Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Salary Calculator</h1>
+    </header>
 
+    <main>
+      <h2>Add Employee</h2>
 
       <!-- ... (Form goes here yo) ... -->
       <form id="employeeForm">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" data-testid="firstNameInput">
-    
+        <input type="text" id="firstName" data-testid="firstNameInput" />
+
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" data-testid="lastNameInput">
-    
+        <input type="text" id="lastName" data-testid="lastNameInput" />
+
         <label for="idNumber">ID Number:</label>
-        <input type="text" id="idNumber" data-testid="idInput">
-    
+        <input type="text" id="idNumber" data-testid="idInput" />
+
         <label for="jobTitle">Job Title:</label>
-        <input type="text" id="jobTitle" data-testid="titleInput">
-    
+        <input type="text" id="jobTitle" data-testid="titleInput" />
+
         <label for="annualSalary">Annual Salary:</label>
-        <input type="number" id="annualSalary" data-testid="annualSalaryInput">
-    
+        <input
+          type="number"
+          id="annualSalary"
+          data-testid="annualSalaryInput"
+        />
+
         <button type="submit" data-testid="submitButton">Submit</button>
       </form>
 
       <h2>Employees</h2>
 
-      
-        <section>
-          <h2>Employees</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>ID</th>
-                <th>Title</th>
-                <th>Annual Salary</th>
-                <th></th> <!-- Column for delete action!! -->
-              </tr>
-            </thead>
-            <tbody id="employeeTable">
-              <!-- 
+      <section>
+        <h2>Employees</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Annual Salary</th>
+              <th></th>
+              <!-- Column for delete action!! -->
+            </tr>
+          </thead>
+          <tbody id="employeeTable">
+            <!-- 
                 
                 ROWS!!!
               
               -->
-              <tr>
-                <td>Jen</td>
-                <td>Barber</td>
-                <td>4521</td>
-                <td>Team Lead</td>
-                <td>80000</td>
-                <td><button class="deleteBtn">Delete</button></td>
-              </tr>
-              <tr>
-                <td>Maurice</td>
-                <td>Moss</td>
-                <td>8724</td>
-                <td>Support Team</td>
-                <td>58000</td>
-                <td><button class="deleteBtn">Delete</button></td>
-              </tr>
-              <tr>
-                <td>Roy</td>
-                <td>Smith</td>
-                <td>9623</td>
-                <td>Quality Assurance</td>
-                <td>48000</td>
-                <td><button class="deleteBtn">Delete</button></td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+            <tr>
+              <td>Jen</td>
+              <td>Barber</td>
+              <td>4521</td>
+              <td>Team Lead</td>
+              <td>80000</td>
+              <td><button class="deleteBtn">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Maurice</td>
+              <td>Moss</td>
+              <td>8724</td>
+              <td>Support Team</td>
+              <td>58000</td>
+              <td><button class="deleteBtn">Delete</button></td>
+            </tr>
+            <tr>
+              <td>Roy</td>
+              <td>Smith</td>
+              <td>9623</td>
+              <td>Quality Assurance</td>
+              <td>48000</td>
+              <td><button class="deleteBtn">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-        <tbody id="employeeTable">
+      <tbody id="employeeTable">
         <!-- Employee rows will be added here dynamically -->
-        </tbody>
-      
-    
-    
-    
-  </main>
-  
-  <footer>
-    
+      </tbody>
+    </main>
+
+    <footer>
       <p>Total Monthly: <span id="totalMonthly">0</span></p>
-
-  </footer>
-  <script src="script.js"></script>
-
-</body>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
